@@ -4,6 +4,8 @@ vcpkg_from_github(
     REF oneDPL-2021.6.1-release
     SHA512 57345f4789c86d5b71cba525c11ff7d2fc925791f6c5fe9099960afa2c42e05d04a6d024be65d6b52a9e3f1fd0f44412ea064ea84def7f7008adce4db0e78b21
     HEAD_REF master
+    PATCHES
+      cmake-config-include-path.cmake
 )
 
 vcpkg_cmake_configure(
